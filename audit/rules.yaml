@@ -1,0 +1,16 @@
+"""
+- id: "privileged-containers"
+  resource: "pods"
+  description: "Containers with privileged access"
+  check: "spec.containers[].securityContext.privileged == True"
+
+- id: "run-as-root"
+  resource: "pods"
+  description: "Containers running as root user"
+  check: "spec.containers[].securityContext.runAsUser == 0"
+
+- id: "default-service-account"
+  resource: "pods"
+  description: "Pods using default service account"
+  check: "spec.serviceAccountName == 'default'"
+"""
