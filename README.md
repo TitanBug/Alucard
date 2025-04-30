@@ -19,7 +19,7 @@ A terminal-based Kubernetes misconfiguration scanner with a TUI interface. Uses 
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/kubeaudit-tui.git
+git clone https://github.com/TitanBug/Alucard.git
 cd kubeaudit-tui
 python3 -m venv venv
 source venv/bin/activate
